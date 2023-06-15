@@ -1,0 +1,41 @@
+<footer>
+  <a href="#" class="footer-logo">
+    <img src="{{ logo }}" alt="site logo on the footer" />
+  </a>
+
+  <div class="footer-contact">
+    <div>
+      <img src="{{ footer.phone }}" alt="{{ footer.phoneAlt}}" />
+      <p>{{ footer.phoneNumber }}</p>
+    </div>
+
+    <div>
+      <img src="{{ footer.email }}" alt="{{ footer.emailAlt}}" />
+      <p>{{ footer.emailAdress }}</p>
+    </div>
+
+    <div class="footer-nav">
+      <ul class="footer-nav--first">
+        {% for item in footer.items %}
+        <li>
+          <a href="{{ item.url }}">{{ item.text }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      <ul class="footer-nav--second">
+        {% for item in footer.itemsSecond %}
+        <li>
+          <a href="{{ item.url }}">{{ item.text }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="footer-socials">
+    {% for item in footer.itemsSocial %}
+    <a href="#">
+      <img src="{{ item.img }}" alt="{{ item.imgAlt }}" />
+    </a>
+    {% endfor %}
+  </div>
+</footer>

@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "text": "about us",
+      "url": "#"
+    },
+    {
+      "text": "jobs",
+      "url": "#"
+    },
+    {
+      "text": "press",
+      "url": "#"
+    },
+    {
+      "text": "blog",
+      "url": "#"
+    }
+  ],
+
+  "itemsSecond": [
+    {
+      "text": "contact us",
+      "url": "#"
+    },
+
+    {
+      "text": "terms",
+      "url": "#"
+    },
+
+    {
+      "text": "privacy",
+      "url": "#"
+    }
+  ],
+
+  "itemsSocial": [
+    {
+      "img": "/assets/images/facebook.jpg",
+      "imgAlt": "facebook icon on footer section"
+    },
+    {
+      "img": "/assets/images/twitter.jpg",
+      "imgAlt": "twitter icon on footer section"
+    },
+    {
+      "img": "/assets/images/instagram.jpg",
+      "imgAlt": "instagram icon on footer section"
+    }
+  ]
+}
