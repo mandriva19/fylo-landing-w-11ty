@@ -1,0 +1,10 @@
+<nav class="navbar-nav" role="site-navigation">
+  <a href="#" class="navbar-logo">
+    <img src="/assets/images/logo.svg" alt="site logo on the left" />
+    <ul class="navbar-menu">
+      {% for item in navigation.items %}
+      <li><a href="{{ item.url }}"> {{ item.text }} </a></li>
+      {% endfor %}
+    </ul>
+  </a>
+</nav>
