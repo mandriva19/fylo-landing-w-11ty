@@ -1,5 +1,5 @@
 
-![project](https://github.com/mandriva19/fylo-landing-w-11ty/assets/97590591/7885798c-8a49-440d-8f80-30097555f7af)
+![project](https://github.com/mandriva19/fylo-landing-w-11ty/assets/97590591/e0abe26b-aa8c-499c-a81f-a2adeab49488)
 
 # fylo-landing-w-11ty
 This is Fylo landing page made using [11ty SSG](https://www.11ty.dev/). Mockup-Design was taken from frontendmentor.io as [2nd level challenge](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5). 
