@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container-global {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.container {
+  padding-inline: 7%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-size: 1.58rem;
+}
+
+.input-class {
+  padding-inline: 0.625rem;
+  padding-block: 0.5125rem;
+  border-radius: 5px;
+  border: none;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary {
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding-inline: 0.625rem;
+  padding-block: 0.5825rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1.875rem;
+}
+.navbar-nav .navbar-logo img {
+  width: 6rem;
+}
+@media only screen and (min-width: 43.75rem) {
+  .navbar-nav .navbar-logo img {
+    width: 8rem;
+  }
+}
+.navbar-nav .navbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navbar-nav .navbar-menu li:not(:last-child) {
+  margin-right: 0.645rem;
+}
+.navbar-nav .navbar-menu a {
+  text-transform: capitalize;
+  color: hsl(238, 22%, 44%);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.hero-section {
+  margin-top: 6.25rem;
+  text-align: center;
+}
+.hero-section .hero-wrapper {
+  display: grid;
+  gap: 1.875rem;
+}
+.hero-section .hero-wrapper .hero-content h1 {
+  color: hsl(243, 87%, 12%);
+}
+.hero-section .hero-wrapper .hero-content p {
+  color: hsl(243, 87%, 12%);
+}
+.hero-section .hero-form-control {
+  display: grid;
+  gap: 0.625rem;
+}
+.hero-section .hero-form-control ::-webkit-input-placeholder {
+  padding: 1.25rem;
+  opacity: 0.5;
+}
+.hero-section .hero-form-control ::-moz-placeholder {
+  padding: 1.25rem;
+  opacity: 0.5;
+}
+.hero-section .hero-form-control :-ms-input-placeholder {
+  padding: 1.25rem;
+  opacity: 0.5;
+}
+.hero-section .hero-form-control ::-ms-input-placeholder {
+  padding: 1.25rem;
+  opacity: 0.5;
+}
+.hero-section .hero-form-control ::placeholder {
+  padding: 1.25rem;
+  opacity: 0.5;
+}

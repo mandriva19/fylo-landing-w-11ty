@@ -1,0 +1,31 @@
+@use "../abstracts/" as *;
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: $spacing-30;
+
+  .navbar-logo img {
+    width: 6rem;
+
+    @include screenMd {
+      width: 8rem;
+    }
+  }
+
+  .navbar-menu {
+    display: flex;
+
+    li:not(:last-child) {
+      margin-right: 0.645rem;
+    }
+
+    a {
+      text-transform: capitalize;
+      color: $cl-desaturated;
+      font-size: 1rem;
+      font-weight: $fw-400;
+    }
+  }
+}

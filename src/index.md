@@ -22,6 +22,7 @@ testimonials:
     paragraph: "Never let location be an issue when accessing yourfiles. Fylo has you covered for all of your file storage"
     btnText: "See how Fylo works"
     btnImg: "/assets/images/icon-arrow.svg"
+    btnImgAlt: "little arrow image left of the button"
 
 card: 
     img: "/assets/images/icon-quotes.svg"
@@ -36,7 +37,7 @@ card:
 newsletter: 
     heading: "Get early access today"
     paragraph: "It only takes a minute to sign up and our free starter tier is extremely generous. 
-    If you have any questions, our support team would be happy to he"
+    If you have any questions, our support team would be happy to help you"
     inputPlaceholder: "email@example.com"
     textBtn: "Get Started For Free"
 

@@ -1,14 +1,21 @@
-<main class="hero-section">
+<main class="hero-section container">
   <div class="hero-wrapper">
-    <img src="{{ hero.img }}" alt="{{ hero.imgAlt }}" class="hero-img" />
-    <div class="hero-text">
-      <h1>{{ hero.heading }}</h1>
-      <p>{{ hero.paragraph }}</p>
+    <div class="hero-img">
+      <img src="{{ hero.img }}" alt="{{ hero.imgAlt }}" />
     </div>
 
-    <div class="hero-form-control">
-      <input type="email" placeholder="{{ hero.inputPlaceholder }}" />
-      <button class="btn-primary">{{ hero.btnText }}</button>
+    <div class="hero-content">
+      <h1>{{ hero.heading }}</h1>
+      <p>{{ hero.paragraph }}</p>
+
+      <div class="hero-form-control">
+        <input
+          class="input-class"
+          type="email"
+          placeholder="{{ hero.inputPlaceholder }}"
+        />
+        <button class="btn-primary">{{ hero.btnText }}</button>
+      </div>
     </div>
   </div>
 </main>

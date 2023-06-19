@@ -1,32 +1,23 @@
 const sass = require("sass");
-const path = require("node:path");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("assets");
   //sass config
   eleventyConfig.addTemplateFormats("scss");
-
   eleventyConfig.addExtension("scss", {
     outputFileExtension: "css", // optional, default: "html"
 
-    // can be an async function
-    compile: function (inputContent, inputPath) {
-      let parsed = path.parse(inputPath);
-      if (parsed.name.startsWith("_")) {
-        return;
-      }
+    // `compile` is called once per .scss file in the input directory
+    compile: async function (inputContent) {
+      let result = sass.compileString(inputContent);
 
-      let result = sass.compileString(inputContent, {
-        loadPaths: [parsed.dir || ".", this.config.dir.includes],
-      });
-
-      return (data) => {
+      // This is the render function, `data` is the full data cascade
+      return async (data) => {
         return result.css;
       };
     },
   });
   //end sass config
-
+  eleventyConfig.addPassthroughCopy("assets");
   return {
     markdownTemplateEngine: "njk",
     dataTemplateEngine: "njk",

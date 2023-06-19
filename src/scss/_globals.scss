@@ -1,0 +1,101 @@
+@use "abstracts" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container-global {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.container {
+  padding-inline: 7%;
+}
+
+body {
+  font-family: $ff-raleway;
+}
+
+h1 {
+  font-size: $heading-1;
+}
+
+.input-class {
+  padding-inline: $spacing-10;
+  padding-block: 0.5125rem;
+  border-radius: 5px;
+  border: none;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary {
+  background-color: $cl-light-blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding-inline: $spacing-10;
+  padding-block: 0.5825rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: $fw-700;
+}

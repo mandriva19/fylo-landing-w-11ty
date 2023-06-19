@@ -1,0 +1,30 @@
+@use "../abstracts/" as *;
+
+.hero-section {
+  margin-top: $spacing-100;
+  text-align: center;
+
+  .hero-wrapper {
+    display: grid;
+    gap: $spacing-30;
+
+    .hero-content {
+      h1 {
+        color: $cl-dark-blue;
+      }
+      p {
+        color: $cl-dark-blue;
+      }
+    }
+  }
+
+  .hero-form-control {
+    display: grid;
+    gap: $spacing-10;
+
+    ::placeholder {
+      padding: $spacing-20;
+      opacity: 0.5;
+    }
+  }
+}
